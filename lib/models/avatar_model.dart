@@ -4,12 +4,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:projektzpss/models/body_part_enum.dart';
 import 'package:projektzpss/models/hairstyles.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AvatarModel extends ChangeNotifier{
   Color _hairColor = Color(0xfffcbaff);
   Color _skinColor = Color(0xffab987b);
   Color _tShirtColor = Color(0xff80b9bf);
   Color _legsColor = Color(0xff636a6b);
+  SharedPreferences _preferences;
 
   get hairColor => _hairColor;
 
@@ -18,6 +20,16 @@ class AvatarModel extends ChangeNotifier{
   get tShirtColor => _tShirtColor;
 
   get legsColor => _legsColor;
+
+//  initPreferences () async{
+//    _preferences = await SharedPreferences.getInstance();
+//    _totalHoursCount = _preferences.getInt('totalHours') ?? 0;
+//    notifyListeners();
+//  }
+//
+//  resetPreferences(){
+//    _preferences.clear();
+//  }
 
 
   void getVeryRandomColor(Body body){
@@ -32,7 +44,7 @@ class AvatarModel extends ChangeNotifier{
     switch (body){
       case Body.hair:{
         _hairColor = color;
-        print('color');
+        print(color.toString());
         notifyListeners();
         break;
       }

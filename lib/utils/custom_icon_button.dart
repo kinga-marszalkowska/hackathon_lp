@@ -13,7 +13,7 @@ class CustomChangeColorIconButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: IconButton(
-        icon: Icon(Icons.arrow_back_ios),
+        icon: Icon(Icons.arrow_back_ios,),
         iconSize: 50,
         color: Colors.blueGrey,
         onPressed: (){
