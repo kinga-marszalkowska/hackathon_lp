@@ -1,16 +1,26 @@
-# projektzpss
 
-A new Flutter application.
+# Projekt z PSS
 
-## Getting Started
+Flutter app with a fun avatar to help you keep your daily coding routine!
 
-This project is a starting point for a Flutter application.
+![444ynd](https://user-images.githubusercontent.com/64398325/83920816-4d6d9800-a77d-11ea-87c6-930b30251ea3.gif)
 
-A few resources to get you started if this is your first Flutter project:
+## How it works?
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Use arrows to change hair, Tshirt, pants color (hairstyles coming soon!)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Swipe up to move to calendar.
+
+  • long press to add the number of hours you spent coding today
+  
+  • change view to week, 2 weeks, month to see your progress
+
+## Flutter 
+  • CustomPainter
+  
+  •	Provider + ChangeNotifier
+  
+  •	SharedPreferences
+  
+  •	UI: table calendar, number picker
+  
