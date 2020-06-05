@@ -3,7 +3,7 @@
 
 Flutter app to see if you keep your daily coding routine with fun avatar!
 
-<a href="https://imgflip.com/gif/444ynd"><img src="https://imgflip.com/gif/444ynd"/></a>
+![444ynd](https://user-images.githubusercontent.com/64398325/83920816-4d6d9800-a77d-11ea-87c6-930b30251ea3.gif)
 
 ## How it works?
 
