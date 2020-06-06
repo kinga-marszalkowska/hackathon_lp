@@ -21,9 +21,9 @@ class CalendarScreen extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Center(
-                    child: Expanded(
-                      flex: 1,
+                  Expanded(
+                    flex: 1,
+                    child: Center(
                       child: GestureDetector(
                         onHorizontalDragDown: (drag){
                           Navigator.pop(context);

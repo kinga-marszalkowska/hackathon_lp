@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 double squareSide = 20.0;
 double origin = 10;
 
-class Hairstyles {
+class Hairstyle {
+
+  static List<List<Rect>> hairstyles = [
+    longHair,
+    longHair2,
+    shortHair,
+    shortHair2,
+  ];
+
   static List<Rect> longHair = [
     //hair
     //x axis, y axis
@@ -58,10 +66,5 @@ class Hairstyles {
         Offset(origin + squareSide * 9, origin + squareSide * 3)),
   ];
 
-  List<List<Rect>> hairstyles = [
-    longHair,
-    longHair2,
-    shortHair,
-    shortHair2,
-  ];
+
 }

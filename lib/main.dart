@@ -73,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CustomChangeStyleIconButton(body: Body.hair),
+                    CustomChangeHairstyleIconButton(),
                     CustomChangeStyleIconButton(body: Body.tShirt),
                     CustomChangeStyleIconButton(body: Body.legs),
                   ],

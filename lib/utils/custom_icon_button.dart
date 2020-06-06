@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projektzpss/models/avatar_model.dart';
 import 'package:projektzpss/models/body_part_enum.dart';
+import 'package:projektzpss/models/hairstyles.dart';
 import 'package:provider/provider.dart';
 
 class CustomChangeColorIconButton extends StatelessWidget {
@@ -39,6 +40,24 @@ class CustomChangeStyleIconButton extends StatelessWidget {
         color: Colors.blueGrey,
         onPressed: (){
           Provider.of<AvatarModel>(context, listen: false).getVeryRandomColor(body);
+        },
+      ),
+    );
+  }
+}
+
+class CustomChangeHairstyleIconButton extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: IconButton(
+        icon: Icon(Icons.arrow_forward_ios),
+        iconSize: 50,
+        color: Colors.blueGrey,
+        onPressed: (){
+          Provider.of<AvatarModel>(context, listen: false).changeHairstyle();
         },
       ),
     );
