@@ -7,7 +7,7 @@ Flutter app with a fun avatar to help you keep your daily coding routine!
 
 ## How it works?
 
-Use arrows to change hair, Tshirt, pants color (hairstyles coming soon!)
+Use arrows to change hair, Tshirt, pants color
 
 Swipe up to move to calendar.
 
@@ -23,4 +23,9 @@ Swipe up to move to calendar.
   •	SharedPreferences
   
   •	UI: table calendar, number picker
+  
+ ## Coming soon
+  • Add other tasks, not only coding
+  • Levels and achievements
+  
   
