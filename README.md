@@ -3,7 +3,7 @@
 
 Flutter app with a fun avatar to help you keep your daily coding routine!
 
-![444ynd](https://user-images.githubusercontent.com/64398325/83920816-4d6d9800-a77d-11ea-87c6-930b30251ea3.gif)
+![446zrl](https://user-images.githubusercontent.com/64398325/83942454-be4f9700-a7f3-11ea-8d06-c5069712cf87.gif)
 
 ## How it works?
 
