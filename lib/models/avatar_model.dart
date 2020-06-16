@@ -13,6 +13,7 @@ class AvatarModel extends ChangeNotifier{
   Color _tShirtColor = Color(0xff80b9bf);
   Color _legsColor = Color(0xff636a6b);
   List<Rect> _hairstyle = Hairstyle.hairstyles[0];
+  double _skinTone = 0.5;
   SharedPreferences _preferences;
 
   get hairColor => _hairColor;
@@ -24,6 +25,8 @@ class AvatarModel extends ChangeNotifier{
   get legsColor => _legsColor;
 
   get hairstyle => _hairstyle;
+
+  get skinTone => _skinTone;
 
 //  initPreferences () async{
 //    _preferences = await SharedPreferences.getInstance();
@@ -46,6 +49,15 @@ class AvatarModel extends ChangeNotifier{
     notifyListeners();
   }
 
+  void setSkinColor(int sliderValue){
+    _skinColor = Color.fromARGB(sliderValue, 79, 39, 2);
+    notifyListeners();
+  }
+
+  void setSkinTone(double sliderValue){
+    _skinTone = sliderValue;
+    notifyListeners();
+  }
 
   void getVeryRandomColor(Body body){
     final Random _random = Random();

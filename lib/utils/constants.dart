@@ -25,3 +25,12 @@ final kHeadlineStyle = GoogleFonts.robotoMono(
     fontWeight: FontWeight.w700,
     fontSize: 40,
 );
+
+const kSliderTheme = SliderThemeData(
+  thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15),
+  overlayShape: RoundSliderOverlayShape(overlayRadius: 30),
+  overlayColor: Color(0x29ffffff),
+  activeTrackColor: Colors.blueGrey,
+  thumbColor: Colors.blueGrey,
+  inactiveTrackColor: Colors.grey,
+);

@@ -16,6 +16,9 @@ void main() {
         create: (context) => AvatarModel(), child: HomeScreen(),
     ),
     debugShowCheckedModeBanner: false,
+    theme: ThemeData(
+      sliderTheme: kSliderTheme,
+    ),
   ));
 }
 
@@ -82,6 +85,18 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
+          Consumer<AvatarModel>(builder: (context, avatarModel, child){
+            return Slider(
+              min: 0.3,
+              max: 1.0,
+              onChanged: (double val){
+                avatarModel.setSkinTone(val);
+                avatarModel.setSkinColor((val*200).toInt());
+              },
+              value: avatarModel.skinTone,
+
+            );
+          }),
           Center(
             child: GestureDetector(
               onHorizontalDragDown: (drag){
@@ -107,7 +122,8 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
+
         ],
       ),
     );
