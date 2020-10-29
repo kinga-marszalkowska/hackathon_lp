@@ -5,7 +5,7 @@ Flutter app with a fun avatar to help you keep your daily coding routine!
 
 ![446zrl](https://user-images.githubusercontent.com/64398325/83942454-be4f9700-a7f3-11ea-8d06-c5069712cf87.gif)
 
-## How it works?
+## How does it work?
 
 Use left arrows to change hair, Tshirt, pants color
 
