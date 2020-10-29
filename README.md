@@ -26,7 +26,7 @@ Swipe up to move to calendar.
   
   •	UI: table calendar, number picker
   
- ## Coming soon
+ ## Ideas
   • Add other tasks, not only coding
   
   • Levels and achievements
