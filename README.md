@@ -24,14 +24,15 @@ Swipe up to move to calendar.
 
 ## ⚙️ Technologies 
   • CustomPainter 
-  
-  •	Provider + ChangeNotifier
-  
-  •	SharedPreferences
-  
-  •	[Table calendar] (https://pub.dev/packages/table_calendar)!
-  number picker
-  
+  • [Flutter](https://flutter.dev/) version: 1.20.0
+  • [Dart](https://dart.dev/) version: 2.9.0
+  • [Provider + ChangeNotifier](https://pub.dev/packages/provider) version: 4.1.2
+  • [Table calendar](https://pub.dev/packages/table_calendar) version: 2.2.3
+  • [SharedPreferences](https://pub.dev/packages/shared_preferences) version: ^0.5.7+3
+  • [Number Picker](https://pub.dev/packages/numberpicker) version: ^1.2.0
+  • [Device_preview](https://pub.dev/packages/device_preview) version: 0.4.8
+  • [Google Fonts](https://pub.dev/packages/google_fonts) version: 1.1.0
+
  ## 💡 Ideas
   • Add other tasks, not only coding
   
