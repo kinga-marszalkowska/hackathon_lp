@@ -5,9 +5,10 @@ Flutter app with a fun avatar and calendar to help you keep your daily coding ro
 
 ![446zrl](https://user-images.githubusercontent.com/64398325/83942454-be4f9700-a7f3-11ea-8d06-c5069712cf87.gif)
 
-- [Heading](#heading)
-- [Heading](#heading-1)
-- [Heading](#heading-2)
+## 📖 Table of contents:
+- [How does it work?](#How-does-it-work?)
+- [Technologies](#Technologies)
+- [Ideas](#Ideas)
 
 ## 🧐 How does it work?
 
@@ -28,7 +29,8 @@ Swipe up to move to calendar.
   
   •	SharedPreferences
   
-  •	UI: table calendar, number picker
+  •	[Table calendar] (https://pub.dev/packages/table_calendar)!
+  number picker
   
  ## 💡 Ideas
   • Add other tasks, not only coding
