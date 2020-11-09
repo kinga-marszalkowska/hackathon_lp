@@ -7,7 +7,9 @@ Flutter app with a fun avatar and calendar to help you keep your daily coding ro
 
 ## 📖 Table of contents:
   • [How does it work?](#How-does-it-work?)
+  
   • [Technologies](#Technologies)
+  
   • [Ideas](#Ideas)
 
 ## 🧐 How does it work?
