@@ -2,6 +2,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:flutter/material.dart';
 
+
+final kdarkGreen = Color(0xff136553);
+
 final kCalendarStyle = CalendarStyle(
   selectedColor: Colors.deepOrange[400],
   todayColor: Colors.deepOrange[200],
