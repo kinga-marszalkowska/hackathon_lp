@@ -3,6 +3,8 @@ import 'package:projektzpss/screens/HomeScreen.dart';
 import 'package:projektzpss/screens/LoginScreen.dart';
 import 'package:projektzpss/screens/OrderScreen.dart';
 import 'package:projektzpss/screens/QrScreen.dart';
+import 'package:projektzpss/screens/SuccessScreen.dart';
+import 'package:projektzpss/screens/TipsScreen.dart';
 import 'screens/Home.dart';
 import 'utils/routing.dart';
 void main() => runApp(MyApp());
@@ -18,12 +20,14 @@ class MyApp extends StatelessWidget {
           textTheme: TextTheme(
               button: TextStyle(color: Colors.white, fontSize: 18.0),
               title: TextStyle(color: Colors.red))),
-      initialRoute: homeScreenRoute,
+      initialRoute: loginScreenRoute,
       routes: {
         homeScreenRoute: (_) => HomeScreen(),
         orderScreenRoute: (_) => OrderScreen(),
         loginScreenRoute: (_) => LoginScreen(),
         qrScreenRoute: (_) => QrScreen(),
+        tipsScreenRoute: (_) => TipsScreen(),
+        successScreenRoute: (_) => SuccessScreen(),
       },
     );
   }

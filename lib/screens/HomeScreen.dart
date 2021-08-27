@@ -91,7 +91,11 @@ class HomeScreen extends StatelessWidget {
                              Container(
                                height: 35,
                                  width: 35,
-                                 child: Image.asset("assets/compass.png")),
+                                 child: InkWell(
+                                   onTap: (){
+                                     Navigator.of(context).pushNamed(tipsScreenRoute);
+                                   },
+                                     child: Image.asset("assets/compass.png"))),
                               InkWell(
                                 onTap: (){
                                   Navigator.of(context).pushNamed(orderScreenRoute);

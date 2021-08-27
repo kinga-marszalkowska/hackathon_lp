@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:projektzpss/utils/routing.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 
@@ -51,8 +52,13 @@ class _QRViewExampleState extends State<QRViewExample> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   if (result != null)
-                    Text(
-                        'Barcode Type: ${describeEnum(result.format)}   Data: ${result.code}')
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).pushNamed(successScreenRoute);
+                      },
+                      child: Text(
+                          'Barcode Type: ${describeEnum(result.format)}   Data: ${result.code}'),
+                    )
                   else
                     Text('Scan a code'),
                   Row(
