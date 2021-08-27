@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:projektzpss/screens/HomeScreen.dart';
 import 'package:projektzpss/screens/LoginScreen.dart';
 import 'package:projektzpss/screens/OrderScreen.dart';
+import 'package:projektzpss/screens/QrScreen.dart';
 import 'screens/Home.dart';
 import 'utils/routing.dart';
 void main() => runApp(MyApp());
@@ -18,9 +20,10 @@ class MyApp extends StatelessWidget {
               title: TextStyle(color: Colors.red))),
       initialRoute: homeScreenRoute,
       routes: {
-        homeScreenRoute: (_) => Home(),
+        homeScreenRoute: (_) => HomeScreen(),
         orderScreenRoute: (_) => OrderScreen(),
         loginScreenRoute: (_) => LoginScreen(),
+        qrScreenRoute: (_) => QrScreen(),
       },
     );
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:projektzpss/utils/constants.dart';
 import 'package:projektzpss/utils/routing.dart';
 import '../web_view_container.dart';
+
 class Home extends StatelessWidget {
   final _links = ['https://www.bdl.lasy.gov.pl/portal/mapy'];
   @override
@@ -9,12 +11,24 @@ class Home extends StatelessWidget {
         body: Column(
           children: [
             SafeArea(
-              child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: _links.map((link) => _urlButton(context, link)).toList(),
-                  ))),
+              child: Stack(
+                children:[
+                  SingleChildScrollView(
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children:[
+                            //_urlButton(context, 'https://www.bdl.lasy.gov.pl/portal/mapy'),
+                            Container(
+                              height: 200,
+                              width: 200,
+                              child: Builder(
+                                  builder: (context) => WebViewContainer('https://www.bdl.lasy.gov.pl/portal/mapy')),
+                            )
+                          ]
+                      )),
+                ]
+              )),
             TextButton(onPressed: (){
               Navigator.of(context).pushNamed(loginScreenRoute);
             }, child: Container(
@@ -36,11 +50,15 @@ class Home extends StatelessWidget {
     return Container(
         padding: EdgeInsets.all(20.0),
         // ignore: deprecated_member_use
-        child: FlatButton(
-          color: Theme.of(context).primaryColor,
-          padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 15.0),
-          child: Text(url),
-          onPressed: () => _handleURLButtonPress(context, url),
+        child: Stack(
+          children:[
+            FlatButton(
+              color: Theme.of(context).primaryColor,
+              padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 15.0),
+              child: Text(url),
+              onPressed: () => _handleURLButtonPress(context, url),
+            ),
+          ]
         ));
   }
   void _handleURLButtonPress(BuildContext context, String url) {

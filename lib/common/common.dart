@@ -41,20 +41,27 @@ class _ProductTileState extends State<ProductTile> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                      height: MediaQuery.of(context).size.height * 0.055 ,
-                      child: isSelected ? Image.asset("assets/${widget.product}_selected.png") : Image.asset("assets/${widget.product}.png")
+                    height: MediaQuery.of(context).size.height * 0.055 ,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    child: isSelected ? Image.asset("assets/${widget.product}_selected.png") : Image.asset("assets/${widget.product}.png")
                   ),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: isSelected ?Image.asset("assets/${widget.product}_title_selected.png"):Image.asset("assets/${widget.product}_title.png"),
+                        Container(
+                          height: 50,
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: isSelected ?Image.asset("assets/${widget.product}_title_selected.png"):Image.asset("assets/${widget.product}_title.png"),
+                          ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 10),
-                          child: isSelected ?Image.asset("assets/${widget.product}_price_selected.png"):Image.asset("assets/${widget.product}_price.png"),
+                        Container(
+                          height: 40,
+                          child: Padding(
+                            padding: const EdgeInsets.only(bottom: 5),
+                            child: isSelected ?Image.asset("assets/${widget.product}_price_selected.png"):Image.asset("assets/${widget.product}_price.png"),
+                          ),
                         )
                       ],
                     ),
